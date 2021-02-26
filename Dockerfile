@@ -1,6 +1,6 @@
 FROM varuntirumala1/alpine-nginx:latest
 
-COPY /files/openspeedtest.conf /etc/nginx/conf.d/openspeedtest.conf
+COPY /files/openspeedtest.conf /config/nginx/site-confs/default
 COPY /files/www/* /usr/share/nginx/html/
 COPY /etc/cont-init.d/ /etc/cont-init.d/
 
