@@ -6,7 +6,7 @@ COPY /etc/cont-init.d/ /etc/cont-init.d/
 
 RUN rm -rf /etc/nginx/conf.d/default.conf \
     && wget https://openspeedtest.com/downloading -O /usr/share/nginx/html/downloading \
-	&& wget wget https://openspeedtest.com/load/upload -O /usr/share/nginx/html/upload \
+	&& wget https://openspeedtest.com/load/upload -O /usr/share/nginx/html/upload \
     && rm -rf /usr/share/nginx/html/*.html \
     && chmod 755 /usr/share/nginx/html/upload \
     && chmod 755 /usr/share/nginx/html/downloading \
