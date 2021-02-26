@@ -5,7 +5,7 @@ COPY /files/www/* /usr/share/nginx/html/
 COPY /etc/cont-init.d/ /etc/cont-init.d/
 
 RUN rm -rf /etc/nginx/conf.d/default.conf \
-    && wget http://ipv4.download.thinkbroadband.com/200MB.zip -O /usr/share/nginx/html/downloading \
+    && wget http://ipv4.download.thinkbroadband.com/512MB.zip -O /usr/share/nginx/html/downloading \
 	&& wget https://openspeedtest.com/load/upload -O /usr/share/nginx/html/upload \
     && rm -rf /usr/share/nginx/html/*.html \
     && chmod 755 /usr/share/nginx/html/upload \
