@@ -13,4 +13,4 @@ RUN rm -rf /etc/nginx/conf.d/default.conf \
 	&& chmod +x /etc/cont-init.d/80-custom
 
 # Listen to required port(s)
-EXPOSE 8080
+EXPOSE 80
