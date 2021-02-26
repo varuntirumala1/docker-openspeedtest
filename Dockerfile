@@ -15,5 +15,3 @@ RUN rm -rf /etc/nginx/conf.d/default.conf \
 
 # Listen to required port(s)
 EXPOSE 8080
-
-CMD ["nginx", "-g", "daemon off;"]
